@@ -149,12 +149,29 @@
 // echo "Dans 10 ans, tu auras".$ageplus10." ans.";
 
 
-Concaténation de prénom et nom
-Demandez à l'utilisateur de saisir son prénom puis son nom, puis affichez son nom complet sur une seule ligne.
-Exemple attendu :
+// Concaténation de prénom et nom
+// Demandez à l'utilisateur de saisir son prénom puis son nom, puis affichez son nom complet sur une seule ligne.
+// Exemple attendu :
 
-Prénom :
-> Marie
-Nom :
-> Dupont
-Bonjour Marie Dupont !
+// Prénom :
+// > Marie
+// Nom :
+// > Dupont
+// Bonjour Marie Dupont !
+
+// $prenom = "Marie";
+// $nom = "Dupont";
+// echo "Bonjour ".$prenom." ".$nom."\n"; 
+
+
+// Calcul du périmètre d'un cercle
+// Demandez à l'utilisateur de saisir le rayon d'un cercle, puis affichez le périmètre (formule : 2 * pi * rayon, avec pi = 3.14).
+// Exemple attendu :
+
+// Rayon du cercle :
+// > 4
+// Le périmètre du cercle est : 25.12
+
+calcul
+
+
