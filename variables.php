@@ -185,6 +185,23 @@
 
 
 
+// Calcul de la date de naissance Demandez son année de naissance à l'utilisateur puis affichez son âge en fonction de l'année actuelle. 
+// La fonction date() permet de connaître la date d'aujourd'hui en fonction d'un format fourni en paramètre (entre les parenthèses).
+
+// <?php
+// $annee = date("Y");
+// $mois = date("m");
+// $complet = date("Y:m:d - h:m:s");
+
+// echo "$annee \n";
+// echo "$mois \n";
+// echo "$complet \n";
 
 
+echo "donne moi ta date de naissance ?";
+"\n".$datedenaissancechoisie = trim(fgets(STDIN));
+
+$datedenaissancechoisie = (int)$datedenaissancechoisie ;
+
+echo "Tu es né(e) le".$datedenaissancechoisie.".";
 
