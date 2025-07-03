@@ -122,3 +122,22 @@
 // Entrez un second nombre :
 // > 7
 // Le résultat est : 12
+
+// echo "Entrez un premier nombre:\n";
+// "\n".$firstnumber = trim(fgets(STDIN));
+// echo "Entrez un second nombre:\n";
+// "\n".$secondnumber = trim(fgets(STDIN));
+// echo "Le résultat est : ".$firstnumber+$secondnumber." ! \n";
+
+// Calcul de l'âge dans 10 ans
+// Demandez à l'utilisateur son âge, puis affichez quel sera son âge dans 10 ans.
+// Exemple attendu :
+
+// Quel est ton âge ?
+// > 20
+// Dans 10 ans, tu auras 30 ans.
+
+$ageplus10= $firstnumber + 10;
+echo "Quel est ton âge ?\n";
+"\n".$ageplus10 = trim(fgets(STDIN));
+echo "Dans 10 ans, tu auras". $ageplus10." ans.";
