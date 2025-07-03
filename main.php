@@ -7,18 +7,18 @@
 // $x=8;
 // $y=6;
 // $somme = $x + $y;
-// echo ($somme)
+// echo ($somme);
 
 // $x=25;
 // $y=4;
 // $division = $x / $y;
-// echo ($divisio,)
+// echo ($division);
 
 
 // $x=17;
 // $y=3;
 // $modulo = $x%$y;
-// echo ($modulo)
+// echo ($modulo);
 
 
 // $naissance= 1990;
@@ -59,27 +59,40 @@
 // <!-- Affichez la phrase : Le carré de 9 est : 81 en utilisant une variable pour le nombre et une opération pour le calculer. -->
 
 
-  $leneuf = 9 ;
-  $lecarrede9 = ($leneuf)²;
-  echo $lecarrede9;
+//   $leneuf = 9 ;
+//   $lecarrede9 = ($leneuf)²;
+//   echo $lecarrede9; lui ne fonctionne pas 
 
 
 
 // <!-- Déclarez deux variables $a et $b contenant respectivement 10 et 20, puis affichez leur somme. -->
 
+// $a=10;
+// $b=20;
+// $somme = $a + $b;
+// echo ($somme);
 
 
 // <!-- Affichez la phrase : Le résultat de 15 x 3 est : 45 en utilisant des variables pour les nombres. -->
 
-
+// $a=15;
+// $b=3;
+// $produit = $a * $b;
+// echo ($produit);
 
 // <!-- Affichez la phrase : Aujourd'hui, il fait beau.. -->
 
 
 
+
 // <!-- Affichez le résultat de la division de 100 par 4. -->
 
-
+$a=100;
+$b=4;
+$division = $a / $b;
+echo ($division);
 
 // <!-- Affichez les phrases suivantes sur deux lignes : -->
 
+
+?>
