@@ -172,6 +172,19 @@
 // > 4
 // Le périmètre du cercle est : 25.12
 
-calcul
+
+
+
+
+// echo "choisis le diamètre pour obtenir le périmètre de ton cercle par la suite.";
+// "\n".$diametrechoisiparlutilisateur  = trim(fgets(STDIN));
+// $diametrechoisiparlutilisateur = (int)$diametrechoisiparlutilisateur;
+// $calculperimetrecercle =  M_PI * $diametrechoisiparlutilisateur;
+
+// echo "Le périmètre de ton cercle avec le diamètre choisi :  " . $diametrechoisiparlutilisateur."  est égal à. ".$calculperimetrecercle.  "  cm²";
+
+
+
+
 
 
