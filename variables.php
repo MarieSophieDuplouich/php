@@ -137,7 +137,24 @@
 // > 20
 // Dans 10 ans, tu auras 30 ans.
 
-$ageplus10= $firstnumber + 10;
-echo "Quel est ton âge ?\n";
-"\n".$ageplus10 = trim(fgets(STDIN));
-echo "Dans 10 ans, tu auras". $ageplus10." ans.";
+
+
+// $firstnumber = (int)$firstnumber;
+
+
+// echo "Quel est ton âge ?\n";
+// "\n".$firstnumber = trim(fgets(STDIN));
+
+// $ageplus10= $firstnumber + 10;
+// echo "Dans 10 ans, tu auras".$ageplus10." ans.";
+
+
+Concaténation de prénom et nom
+Demandez à l'utilisateur de saisir son prénom puis son nom, puis affichez son nom complet sur une seule ligne.
+Exemple attendu :
+
+Prénom :
+> Marie
+Nom :
+> Dupont
+Bonjour Marie Dupont !
