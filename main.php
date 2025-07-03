@@ -32,7 +32,11 @@
 
 // <!-- Affichez la phrase : La somme de 10, 20 et 30 est : 60 en utilisant trois variables. -->
 
-
+// $a=10;
+// $b=20;
+// $c=30;
+// $somme = $a+$b+$c;
+// echo ($somme);
 
 
 // <!-- Calculez et affichez la moyenne de trois notes (par exemple 14, 16, 18). -->
@@ -87,12 +91,17 @@
 
 // <!-- Affichez le résultat de la division de 100 par 4. -->
 
-$a=100;
-$b=4;
-$division = $a / $b;
-echo ($division);
+// $a=100;
+// $b=4;
+// $division = $a / $b;
+// echo ($division);
 
-// <!-- Affichez les phrases suivantes sur deux lignes : -->
+// <!-- Affichez les phrases suivantes sur deux lignes : Ceci est la première ligne.Ceci est la seconde ligne.-->
+
+
+echo "Bienvenue à \n ";
+$age = trim (fgets (STDIN));
+echo "Tu as donc $age ans \n";
 
 
 ?>
