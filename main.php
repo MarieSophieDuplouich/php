@@ -50,15 +50,36 @@
 
 // <!-- Affichez la concaténation de deux chaînes de caractères, par exemple votre prénom et votre nom. -->
 
+// $fullname = "Marie-Sophie Duplouich";
+// $firstname = "Marie-Sophie";
+// $familyname = "DUPLOUICH";
+
+// echo "Je m'appelle" .$fullname. "Mon prénom est : ".$firstname . "et mon nom :". $familyname;
+
 // <!-- Affichez la phrase : Le carré de 9 est : 81 en utilisant une variable pour le nombre et une opération pour le calculer. -->
+
+
+  $leneuf = 9 ;
+  $lecarrede9 = ($leneuf)²;
+  echo $lecarrede9;
+
+
 
 // <!-- Déclarez deux variables $a et $b contenant respectivement 10 et 20, puis affichez leur somme. -->
 
+
+
 // <!-- Affichez la phrase : Le résultat de 15 x 3 est : 45 en utilisant des variables pour les nombres. -->
+
+
 
 // <!-- Affichez la phrase : Aujourd'hui, il fait beau.. -->
 
+
+
 // <!-- Affichez le résultat de la division de 100 par 4. -->
+
+
 
 // <!-- Affichez les phrases suivantes sur deux lignes : -->
 
