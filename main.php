@@ -86,7 +86,7 @@
 
 // <!-- Affichez la phrase : Aujourd'hui, il fait beau.. -->
 
-
+// echo "Aujourd'hui, il fait beau.\n ";
 
 
 // <!-- Affichez le résultat de la division de 100 par 4. -->
@@ -99,9 +99,5 @@
 // <!-- Affichez les phrases suivantes sur deux lignes : Ceci est la première ligne.Ceci est la seconde ligne.-->
 
 
-echo "Bienvenue à \n ";
-$age = trim (fgets (STDIN));
-echo "Tu as donc $age ans \n";
-
-
+echo "Ceci est la première ligne.\nCeci estla seconde ligne.\n";
 ?>
