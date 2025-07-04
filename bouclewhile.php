@@ -222,8 +222,32 @@
 
 
 
+// while (true) {
+//     echo "Tape un nombre positif :\n";
+//     $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
+//     $number = (int)$commande;
+//     switch ($commande) {
+//         case ($number < 0):
+//             echo "ton nombre est négatif, continue !\n";
+//             break;
+//         case ($number > 0):
+//             echo "ton nombre est positif. Au revoir !\n";
+//             exit; // arrête l'execution du programme    
+            
+//             default:
+//             echo "tape un vrai nombre nom de D.ieu!";
+//             break;
+// }
+// }
+
+
+
+// Table de multiplication
+
+// Demandez à l'utilisateur de saisir un nombre, puis affichez la table de multiplication de ce nombre de 1 à 10.
+
 while (true) {
-    echo "Tape un nombre positif :\n";
+    echo "Tape un nombre :\n";
     $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
     $number = (int)$commande;
     switch ($commande) {
@@ -241,12 +265,14 @@ while (true) {
 }
 
 
+$number = 5;
 
-// Table de multiplication
+// Print the multiplication table
+for ($i = 0; $i <= 10; $i++) {
+    $result = $number * $i;
+    echo "$number x $i = $result"; // Using newline for output formatting
+}
 
-// Demandez à l'utilisateur de saisir un nombre, puis affichez la table de multiplication de ce nombre de 1 à 10.
-
-// Je ne sais pas ce que vous voulez
 
 // Somme des nombres
 // Demandez à l'utilisateur de saisir des nombres jusqu'à ce qu'il saisisse 0. Affichez la somme de tous les nombres saisis.
