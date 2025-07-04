@@ -172,18 +172,20 @@
 // > 4
 // Le périmètre du cercle est : 25.12
 
-
-
-
-
 // echo "choisis le diamètre pour obtenir le périmètre de ton cercle par la suite.";
 // "\n".$diametrechoisiparlutilisateur  = trim(fgets(STDIN));
 // $diametrechoisiparlutilisateur = (int)$diametrechoisiparlutilisateur;
 // $calculperimetrecercle =  M_PI * $diametrechoisiparlutilisateur;
 
-// echo "Le périmètre de ton cercle avec le diamètre choisi :  " . $diametrechoisiparlutilisateur."  est égal à. ".$calculperimetrecercle.  "  cm²";
+// echo "Le périmètre de ton cercle avec le diamètre choisi :  " . $diametrechoisiparlutilisateur."  est égal à. ".$calculperimetrecercle.  "  cm";
 
+//  code cours Massinissa
 
+echo "choisis le rayon pour obtenir le périmètre de ton cercle par la suite.";
+"\n".$rayon  = trim(fgets(STDIN));
+$rayon = (int)$rayon;
+$surface_cercle  =  3.14 *2*$rayon;
+echo "Le périmètre de ton cercle avec le rayon choisi :  " . $rayon."  est égal à. ".$surface_cercle.  "  cm";
 
 // Calcul de la date de naissance Demandez son année de naissance à l'utilisateur puis affichez son âge en fonction de l'année actuelle. 
 // La fonction date() permet de connaître la date d'aujourd'hui en fonction d'un format fourni en paramètre (entre les parenthèses).
@@ -198,10 +200,101 @@
 // echo "$complet \n";
 
 
-echo "donne moi ta date de naissance ?";
-"\n".$datedenaissancechoisie = trim(fgets(STDIN));
+// echo "donne moi ta date de naissance en jour/mois/année ?";
+// "\n".$datedenaissancechoisie = trim(fgets(STDIN));
 
-$datedenaissancechoisie = (int)$datedenaissancechoisie ;
+// $datedenaissancechoisie = (int)$datedenaissancechoisie ;
+// $calculdateactuellemoinsdatedenaissance = $complet - $datedenaissancechoisie;
+// echo "Tu es né(e) le".$datedenaissancechoisie."et tu as actuellement.".$calculdateactuellemoinsdatedenaissance."ans.";
+// J'yreviendrai dessus plus tard
 
-echo "Tu es né(e) le".$datedenaissancechoisie.".";
+// echo "Quel âge as-tu ?\n";
+// $age = trim(fgets(STDIN)); // le programme ATTEND que l'utilisateur tape au clavier (lecture du fichier stdin)
+// if($age >= 18){
+//     echo "Je suis majeur\n";
+// }
+// else{
+//     echo "Je suis mineur\n";
+// }
 
+
+// Souvenez-vous que STDIN est une constante du php qui référence le fichier stdin : le fichier d'entrée standard de votre ordinateur, il lit le clavier.
+
+// Exercices if et fgets
+// Demandez à l'utilisateur de saisir un nombre, puis affichez le carré de ce nombre. Exemple attendu :
+// Entrez un nombre :
+// > 6
+// Le carré de 6 est 36.
+// 6*6=36 le carré d'un nombre, c'est lui multiplié par lui-même.
+
+
+
+// echo "Quel âge as-tu ?\n";
+// $age = trim(fgets(STDIN)); // le programme ATTEND que l'utilisateur tape au clavier (lecture du fichier stdin)
+// if($age >= 18){
+//     echo "Je suis majeur\n";
+// }
+// else{
+//     echo "Je suis mineur\n";
+// }
+
+
+
+// Nombre pair ou impair
+
+
+// echo "Quel âge as-tu ?\n";
+// $age = trim(fgets(STDIN)); // le programme ATTEND que l'utilisateur tape au clavier (lecture du fichier stdin)
+// if($age >= 18){
+//     echo "Je suis majeur\n";
+// }
+// else{
+//     echo "Je suis mineur\n";
+// }
+
+// Demandez à l'utilisateur de saisir un nombre, puis affichez si ce nombre est pair ou impair.
+
+// echo "Quel âge as-tu ?\n";
+// $age = trim(fgets(STDIN)); // le programme ATTEND que l'utilisateur tape au clavier (lecture du fichier stdin)
+// if($age >= 18){
+//     echo "Je suis majeur\n";
+// }
+// else{
+//     echo "Je suis mineur\n";
+// }
+
+// Mot de passe correct
+// Demandez à l'utilisateur de saisir un mot de passe. Si le mot de passe est "secret", affichez "Accès autorisé", sinon affichez "Accès refusé".
+
+// echo "Quel âge as-tu ?\n";
+// $age = trim(fgets(STDIN)); // le programme ATTEND que l'utilisateur tape au clavier (lecture du fichier stdin)
+// if($age >= 18){
+//     echo "Je suis majeur\n";
+// }
+// else{
+//     echo "Je suis mineur\n";
+// }
+
+// Comparer deux nombres
+// Demandez à l'utilisateur de saisir deux nombres, puis affichez lequel est le plus grand ou si les deux sont égaux.
+
+// echo "Quel âge as-tu ?\n";
+// $age = trim(fgets(STDIN)); // le programme ATTEND que l'utilisateur tape au clavier (lecture du fichier stdin)
+// if($age >= 18){
+//     echo "Je suis majeur\n";
+// }
+// else{
+//     echo "Je suis mineur\n";
+// }
+
+// Vérifier une année bissextile
+// Demandez à l'utilisateur de saisir une année, puis affichez si cette année est bissextile ou non (divisible par 4 et, si divisible par 100, aussi par 400).
+
+// echo "Quel âge as-tu ?\n";
+// $age = trim(fgets(STDIN)); // le programme ATTEND que l'utilisateur tape au clavier (lecture du fichier stdin)
+// if($age >= 18){
+//     echo "Je suis majeur\n";
+// }
+// else{
+//     echo "Je suis mineur\n";
+// }
