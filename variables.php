@@ -179,34 +179,35 @@
 
 // echo "Le périmètre de ton cercle avec le diamètre choisi :  " . $diametrechoisiparlutilisateur."  est égal à. ".$calculperimetrecercle.  "  cm";
 
-//  code cours Massinissa
+//  code cours utilisé
 
-echo "choisis le rayon pour obtenir le périmètre de ton cercle par la suite.";
-"\n".$rayon  = trim(fgets(STDIN));
-$rayon = (int)$rayon;
-$surface_cercle  =  3.14 *2*$rayon;
-echo "Le périmètre de ton cercle avec le rayon choisi :  " . $rayon."  est égal à. ".$surface_cercle.  "  cm";
+// echo "choisis le rayon pour obtenir le périmètre de ton cercle par la suite.";
+// "\n".$rayon  = trim(fgets(STDIN));
+// $rayon = (int)$rayon;
+// $surface_cercle  =  3.14 *2*$rayon;
+// echo "Le périmètre de ton cercle avec le rayon choisi :  " . $rayon."  est égal à. ".$surface_cercle.  "  cm";
 
 // Calcul de la date de naissance Demandez son année de naissance à l'utilisateur puis affichez son âge en fonction de l'année actuelle. 
 // La fonction date() permet de connaître la date d'aujourd'hui en fonction d'un format fourni en paramètre (entre les parenthèses).
 
-// <?php
+// // <?php
 // $annee = date("Y");
 // $mois = date("m");
-// $complet = date("Y:m:d - h:m:s");
+// // $complet = date("Y:m:d - h:m:s");
+// $completpourlexo = date("Y");
 
 // echo "$annee \n";
 // echo "$mois \n";
-// echo "$complet \n";
+// echo "$completpourlexo \n";
+// $datedenaissancechoisie =  date("Y");
 
+// echo "donne moi ton année de naissance ?";
+// $datedenaissancechoisie = trim(fgets(STDIN));
 
-// echo "donne moi ta date de naissance en jour/mois/année ?";
-// "\n".$datedenaissancechoisie = trim(fgets(STDIN));
-
-// $datedenaissancechoisie = (int)$datedenaissancechoisie ;
-// $calculdateactuellemoinsdatedenaissance = $complet - $datedenaissancechoisie;
-// echo "Tu es né(e) le".$datedenaissancechoisie."et tu as actuellement.".$calculdateactuellemoinsdatedenaissance."ans.";
-// J'yreviendrai dessus plus tard
+// $datedenaissancechoisie = $datedenaissancechoisie;
+// $calculdateactuellemoinsdatedenaissance = $completpourlexo - $datedenaissancechoisie;
+// echo "Tu es né(e) en".$datedenaissancechoisie."et tu as actuellement.".$calculdateactuellemoinsdatedenaissance."ans.";
+// Je suis ici ce matin 4 juillet 2025 priorités on doit faire les boucles et if boucles while
 
 // echo "Quel âge as-tu ?\n";
 // $age = trim(fgets(STDIN)); // le programme ATTEND que l'utilisateur tape au clavier (lecture du fichier stdin)
