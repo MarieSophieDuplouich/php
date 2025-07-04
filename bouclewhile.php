@@ -1,4 +1,4 @@
-<?php       
+<?php
 
 // $i = 1;
 // while ($i < 6) {
@@ -181,7 +181,7 @@
 // while (true) {
 //     echo "Tapez une commande (create, aide, quitter) :\n";
 //     $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
-    
+
 //     switch ($commande) {
 //         case "create":
 //             echo "Creation du fichier\n";
@@ -204,6 +204,11 @@
 // Créez un programme qui affiche les nombres de 1 à 10 en utilisant une boucle while.
 
 
+//  $i = 1;
+// while ($i <= 10) {
+//     echo "Compteur : $i\n";
+//     $i = $i + 1;
+// }
 
 
 
@@ -211,22 +216,42 @@
 // Saisie utilisateur Demandez à l'utilisateur de saisir un nombre positif. Tant que le nombre est négatif, continuez à demander une saisie. Affichez le nombre quand il est conforme.
 
 
+// ton nombre est positif super !
+
+// Je veux un nombre positif, tu as tapé un nombre négatif
+
+
+
+while (true) {
+    echo "Tape un nombre positif :\n";
+    $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
+    $number = (int)$commande;
+    switch ($commande) {
+        case ($number < 0):
+            echo "ton nombre est négatif, continue !\n";
+            break;
+        case ($number > 0):
+            echo "ton nombre est positif. Au revoir !\n";
+            exit; // arrête l'execution du programme    
+            
+            default:
+            echo "tape un vrai nombre nom de D.ieu!";
+            break;
+}
+}
 
 
 
 // Table de multiplication
 
-
-
 // Demandez à l'utilisateur de saisir un nombre, puis affichez la table de multiplication de ce nombre de 1 à 10.
 
-
+// Je ne sais pas ce que vous voulez
 
 // Somme des nombres
-
-
-
 // Demandez à l'utilisateur de saisir des nombres jusqu'à ce qu'il saisisse 0. Affichez la somme de tous les nombres saisis.
+
+
 
 // Somme des nombres et string
 
@@ -286,6 +311,3 @@
 
 
 // Voir la fonction strlen() pour compter les caractères d'une chaîne de caractères.
-
-?>  
-
