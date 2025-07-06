@@ -273,7 +273,9 @@ for ($i = 0; $i <= 10; $i++) {
     echo "$number x $i = $result"; // Using newline for output formatting
 }
 
-
+for ($i=0; $i < ; $i++) { 
+    # code...
+}
 // Somme des nombres
 // Demandez à l'utilisateur de saisir des nombres jusqu'à ce qu'il saisisse 0. Affichez la somme de tous les nombres saisis.
 
