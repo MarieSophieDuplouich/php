@@ -233,7 +233,7 @@
 //         case ($number > 0):
 //             echo "ton nombre est positif. Au revoir !\n";
 //             exit; // arrête l'execution du programme    
-            
+
 //             default:
 //             echo "tape un vrai nombre nom de D.ieu!";
 //             break;
@@ -246,20 +246,17 @@
 
 // Demandez à l'utilisateur de saisir un nombre, puis affichez la table de multiplication de ce nombre de 1 à 10.
 
-while ($i<= 10) {
-    echo "Tape un nombre :\n";
-    $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
-    $number = (int)$commande;
+// $i = 0;   espace mémoire
+// echo "Tape un nombre :$i\n"; ça me mets 0
+echo "Tape un nombre :\n";
+$number = trim(fgets(STDIN)); // trim enlève le retour à la ligne là tu choisis ton nombre
+// echo $result = $number * $i; ça me mets 0
+
+$i = 1;
+while ($i <= 10) {
+    $result = $number * $i;
+    echo "$number* $i = $result\n";
     $i++;
-    switch ($commande) {
-       
-        case  $result = $number * $i:
-             echo "$number x $i = $result \n";
-            exit; // arrête l'execution du programme    
-            default:
-            echo "tape un vrai nombre nom de D.ieu!";
-            break;
-}
 }
 
 
@@ -283,10 +280,15 @@ while ($i<= 10) {
 
 
 // Jeu de devinette
-
-
 // Créez un jeu où l'utilisateur doit deviner un nombre entre 1 et 100. Le programme lui indique si le nombre est plus grand ou plus petit que le nombre à deviner. Continuez jusqu'à ce qu'il trouve le bon nombre.
 
+// Devine un nombre entre 1 et 100
+
+// Nombre deviné
+
+// exit 
+
+// Nombre non deviné continue à chercher il est plus petit ou plus grand !
 
 
 // Utilisez la fonction rand pour générer un nombre aléatoire entre 1 et 100.
