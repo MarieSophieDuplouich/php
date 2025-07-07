@@ -57,3 +57,14 @@
 // Extraire et afficher des valeurs séparées
 
 // Si chaque ligne d’un fichier est au format clé: valeur, lisez le fichier et affichez chaque clé et valeur sur une ligne distincte.
+
+
+
+// Documentations
+// Le manuel du langage PHP est disponible sur le site officel du langage : https://www.php.net/manual/fr/index.php
+
+// La réference des fonctions et objets du langage sont disponible via la barre de recherche du site officel : https://www.php.net/docs.php
+
+// La réference de la syntaxe du langage est dispoible ici : https://www.php.net/manual/fr/langref.php
+
+// Comme d'habitude W3schools est également là : https://www.w3schools.com/php/php_syntax.asp
