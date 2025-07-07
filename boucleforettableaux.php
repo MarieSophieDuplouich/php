@@ -301,19 +301,74 @@ $notes[] = 15; // Ajoute 15 à la fin du tableau
 
 
 
-Recherche d'une valeur
-Créez un tableau de couleurs, demandez à l'utilisateur de saisir une couleur, puis indiquez si la couleur est présente dans le tableau.
-Exemple attendu :
+// Recherche d'une valeur
+// Créez un tableau de couleurs, demandez à l'utilisateur de saisir une couleur, puis indiquez si la couleur est présente dans le tableau.
+// Exemple attendu :
 
-Entrez une couleur :
-> bleu
-Présente
-Inverser un tableau
-Créez un tableau de 4 villes, puis affichez-les dans l'ordre inverse à l'aide d'une boucle for.
-Exemple attendu :
+// Entrez une couleur :
+// > bleu
+// Présente
 
-Villes à l'envers :
-Nice
-Lyon
-Marseille
-Paris
+
+
+// Inverser un tableau
+// Créez un tableau de 4 villes, puis affichez-les dans l'ordre inverse à l'aide d'une boucle for.
+// Exemple attendu :
+
+// Villes à l'envers :
+// Nice
+// Lyon
+// Marseille
+// Paris
+
+
+$cities = ['Nice','Lyon','Marseille','Paris'];
+$reversedCities = array_reverse($cities);
+
+for ($i = 0; $i < count($cities); $i++) {
+    echo $reversedCities [$i]."\n";
+}
+
+
+// Trouver la valeur maximale
+// Créez un tableau de températures, puis trouvez et affichez la température la plus élevée.
+// Exemple attendu :
+
+// La température maximale est : 32
+// Remplacer une valeur spécifique
+// Créez un tableau d'animaux, demandez à l'utilisateur un nom d'animal à remplacer et le nouveau nom, puis effectuez la modification.
+// Exemple attendu :
+
+// Animaux : chat, chien, lapin, oiseau
+// Quel animal voulez-vous remplacer ?
+// > lapin
+// Par quel animal ?
+// > hamster
+// Animaux : chat, chien, hamster, oiseau
+// Concaténer les éléments d'un tableau
+// Créez un tableau de mots, puis affichez la phrase obtenue en concaténant tous les mots avec un espace.
+// Exemple attendu :
+
+// Tableau : ["Bonjour", "tout", "le", "monde"]
+// Résultat : Bonjour tout le monde
+// Compter les éléments pairs
+// Créez un tableau de nombres, puis comptez et affichez combien de nombres sont pairs.
+// Exemple attendu :
+
+// Il y a 3 nombres pairs dans le tableau.
+// Ajouter un élément à un tableau
+// Créez un tableau de fruits, demandez à l'utilisateur d'ajouter un fruit, puis affichez le tableau mis à jour.
+// Exemple attendu :
+
+// Fruits : pomme, banane, orange
+// Entrez un fruit à ajouter :
+// > kiwi
+// Fruits : pomme, banane, orange, kiwi
+// Supprimer un élément par valeur
+// Créez un tableau de pays, demandez à l'utilisateur un pays à supprimer, puis affichez le tableau après suppression.
+// Exemple attendu :
+
+// Pays : France, Italie, Espagne, Allemagne
+// Entrez le pays à supprimer :
+// > Espagne
+// Pays : France, Italie, Allemagne
