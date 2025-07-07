@@ -268,3 +268,52 @@ $notes[] = 15; // Ajoute 15 à la fin du tableau
 // Exemple attendu :
 
 // La somme des âges est : 98
+
+
+
+// $age = [10,12,15,8,20,33];
+// $nombreDesAges = count($age);
+// $somme = 0;
+// for ($i = 0; $i < $nombreDesAges; $i++) {
+//     $somme += $age[$i];
+// }
+
+// echo "La moyenne des âges est : $somme\n";
+
+// Multiplication des éléments
+// Créez un tableau de 5 nombres entiers, puis affichez le résultat de la multiplication de tous les éléments du tableau.
+// Exemple attendu :
+
+// Le produit des éléments est : 240
+
+// $number = [2, 3, 4, 5, 2];
+// $calculprod=1;
+// $nombreDeNombre = count($number);
+
+
+// for ($i = 0; $i < $nombreDeNombre; $i++) {
+
+//     $calculprod *= $number[$i];
+// }
+
+
+// echo "Le produit de ces 5 nombres est : $calculprod\n";
+
+
+
+Recherche d'une valeur
+Créez un tableau de couleurs, demandez à l'utilisateur de saisir une couleur, puis indiquez si la couleur est présente dans le tableau.
+Exemple attendu :
+
+Entrez une couleur :
+> bleu
+Présente
+Inverser un tableau
+Créez un tableau de 4 villes, puis affichez-les dans l'ordre inverse à l'aide d'une boucle for.
+Exemple attendu :
+
+Villes à l'envers :
+Nice
+Lyon
+Marseille
+Paris
