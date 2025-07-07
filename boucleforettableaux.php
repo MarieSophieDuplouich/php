@@ -195,26 +195,26 @@ $notes[] = 15; // Ajoute 15 à la fin du tableau
 // Exemple attendu :
 // La moyenne des notes est : 13
 
-$notes = [10,12,15,8,20];
+// $notes = [10,12,15,8,20];
 
-$nombreDeNotes = count($notes);
+// $nombreDeNotes = count($notes);
 
-// on commence à partir de 0
-$somme = 0;
+// // on commence à partir de 0
+// $somme = 0;
 
 
-for ($i = 0; $i < $nombreDeNotes; $i++) {
-    //  ci-dessus i = mémoire à 0; $nombreDeNotes ça compte les notes là il y a 5 notes; le $i++ sert que la boucle n'aille pas à l'infini c'est aussi +1
+// for ($i = 0; $i < $nombreDeNotes; $i++) {
+//     //  ci-dessus i = mémoire à 0; $nombreDeNotes ça compte les notes là il y a 5 notes; le $i++ sert que la boucle n'aille pas à l'infini c'est aussi +1
 
-    $somme += $notes[$i];
-    //  ci-dessus  la somme est égale à 0 au départ; plus la somme des    notes actuelles de l'élève présenté sous forme de tableau
-}
+//     $somme += $notes[$i];
+//     //  ci-dessus  la somme est égale à 0 au départ; plus la somme des    notes actuelles de l'élève présenté sous forme de tableau
+// }
 
-// ci-dessous calcul de la moyenne des notes
-$moyenne = $somme / $nombreDeNotes;
+// // ci-dessous calcul de la moyenne des notes
+// $moyenne = $somme / $nombreDeNotes;
 
-//ci-dessous ça te montre le résultat de la moyenne sous format texte
-echo "La moyenne des notes est : $moyenne\n";
+// //ci-dessous ça te montre le résultat de la moyenne sous format texte
+// echo "La moyenne des notes est : $moyenne\n";
 
 
 
@@ -237,3 +237,34 @@ echo "La moyenne des notes est : $moyenne\n";
 //    2 : 20
 //    3 : 8
 //    4 : 20
+
+// $notes = [10,12,15,8,20];
+
+// print_r($notes); 
+// $notes[2] = 20;
+// print_r($notes);
+
+// Affichage des prénoms
+// Créez un tableau contenant les prénoms de 6 personnes et affichez-les un par un à l'aide d'une boucle for.
+// Exemple attendu :
+
+// Prénoms :
+// Alice
+// Bob
+// Clara
+// David
+// Emma
+// Hugo
+
+// $firstnames = ['Alice','Bob','Clara','David', 'Emma',' Hugo'];
+
+// for ($i = 0; $i < count($firstnames); $i++) {
+//     echo $firstnames[$i]."\n";
+// }
+
+
+// Somme des âges
+// Créez un tableau d'âges, puis calculez et affichez la somme totale des âges.
+// Exemple attendu :
+
+// La somme des âges est : 98
