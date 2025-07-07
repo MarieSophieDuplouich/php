@@ -278,48 +278,63 @@
 // Somme des nombres et string
 
 // Tant que i n'est pas égal à 0, il doit continuer à taper un nombre
-echo "Tape un nombre :\n";
-$number = trim(fgets(STDIN));
+// echo "Tape un nombre :\n";
+// $number = trim(fgets(STDIN));
 
-$i = 1;
-while ($i <= 3) {
-    if ($number == 3) 
-    echo "Tu as deviné \n";
+// $i = 1;
+// while ($i <= 3) {
+//     if ($number == 3) 
+//     echo "Tu as deviné \n";
 
-    else {
-        echo "Tu dois continuer à taper un nombre \n";
-    }
+//     else {
+//         echo "Tu dois continuer à taper un nombre \n";
+//     }
    
-    $i++;
-}
+//     $i++;
+// }
 
 
 
-$i = 1;
-echo "Tape un nombre :\n";
-$number = trim(fgets(STDIN));
+// $i = 1;
+// echo "Tape un nombre :\n";
+// $number = trim(fgets(STDIN));
+
+// while ($i <= 3) {
+//     switch ($number == 3) {
+//         case " Tu dois continuer à taper un nombre \n":
+//             echo "Creation du fichier\n";
+//             break;
+//         case "Tu as deviné \n":
+//             echo "Au revoir !\n";
+//             exit; // arrête l'execution du programme
+//         default:
+//             echo "Commande inconnue.\n";
+//              $i++;
+//     }
+// }
+
+
+
 
 while ($i <= 3) {
+    $i = 1;
+    echo "Devine un nombre :\n";
+    $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
+    $number = (int)$commande;
     switch ($commande) {
-        case "create":
-            echo "Creation du fichier\n";
-            $fichier = fopen(date("h:m:s"),"w+");
+        case ($number !== 3):
+            echo "Perdu, continue !\n";
             break;
-        case "aide":
-            echo "Commandesshdcudhucfhd disponibles : create, aide, quitter\n";
+        case ($number == 3):
+            echo "Tu as deviné! Bravo !\n";
+            exit; // arrête l'execution du programme    
+
+            default:
+            echo "tape un vrai nombre nom de D.ieu!";
             break;
-        case "quitter":
-            echo "Au revoir !\n";
-            exit; // arrête l'execution du programme
-        default:
-            echo "Commande inconnue.\n";
-    }
 }
-
-
-
-
-
+   $i++;
+}
 
 
 
