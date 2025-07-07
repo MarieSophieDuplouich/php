@@ -289,18 +289,18 @@
 //     else {
 //         echo "Tu dois continuer à taper un nombre \n";
 //     }
-   
+
 //     $i++;
 // }
 
 
 
-// $i = 1;
+// $i = 0;
 // echo "Tape un nombre :\n";
 // $number = trim(fgets(STDIN));
 
 // while ($i <= 3) {
-//     switch ($number == 3) {
+//     switch ($number == 0) {
 //         case " Tu dois continuer à taper un nombre \n":
 //             echo "Creation du fichier\n";
 //             break;
@@ -314,27 +314,26 @@
 // }
 
 
+// $i = 0;
 
+// while ($i <= 3) {
+//     echo "Devine un nombre :\n";
+//     $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
+//     $number = (int)$commande;
+//     switch ($commande) {
+//         case ($number !== 0):
+//             echo "Perdu, continue !\n";
+//             break;
+//         case ($number == 0):
+//             echo "Tu as deviné! Bravo !\n";
+//             exit; // arrête l'execution du programme    
 
-while ($i <= 3) {
-    $i = 1;
-    echo "Devine un nombre :\n";
-    $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
-    $number = (int)$commande;
-    switch ($commande) {
-        case ($number !== 3):
-            echo "Perdu, continue !\n";
-            break;
-        case ($number == 3):
-            echo "Tu as deviné! Bravo !\n";
-            exit; // arrête l'execution du programme    
-
-            default:
-            echo "tape un vrai nombre nom de D.ieu!";
-            break;
-}
-   $i++;
-}
+//         default:
+//             echo "tape un vrai nombre nom de D.ieu!";
+//             break;
+//     }
+//     $i++;
+// }
 
 
 
