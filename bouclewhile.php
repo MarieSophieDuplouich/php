@@ -247,28 +247,94 @@
 // Demandez à l'utilisateur de saisir un nombre, puis affichez la table de multiplication de ce nombre de 1 à 10.
 
 // $i = 0;   espace mémoire
-// echo "Tape un nombre :$i\n"; ça me mets 0
+// // echo "Tape un nombre :$i\n"; ça me mets 0
+// echo "Tape un nombre :\n";
+// $number = trim(fgets(STDIN)); // trim enlève le retour à la ligne là tu choisis ton nombre
+// // echo $result = $number * $i; ça me mets 0
+
+// $i = 1;
+// while ($i <= 10) {
+//     $result = $number * $i;
+//     echo "$number* $i = $result\n";
+//     $i++;
+// }
+
+
+// Somme des nombres
+// Demandez à l'utilisateur de saisir des nombres jusqu'à ce qu'il saisisse 0. Affichez la somme de tous les nombres saisis.
+
+// echo "Tape un nombre :\n";
+// $number = trim(fgets(STDIN)); // trim enlève le retour à la ligne là tu choisis ton nombre
+// // echo $result = $number * $i; ça me mets 0
+
+// $i = 1;
+// while ($i <= 10) {
+//     $result = $number * $i;
+//     echo "$number* $i = $result\n";
+//     $i++;
+// }
+
+
+// Somme des nombres et string
+
+// Tant que i n'est pas égal à 0, il doit continuer à taper un nombre
 echo "Tape un nombre :\n";
-$number = trim(fgets(STDIN)); // trim enlève le retour à la ligne là tu choisis ton nombre
-// echo $result = $number * $i; ça me mets 0
+$number = trim(fgets(STDIN));
 
 $i = 1;
-while ($i <= 10) {
-    $result = $number * $i;
-    echo "$number* $i = $result\n";
+while ($i <= 3) {
+    if ($number == 3) 
+    echo "Tu as deviné \n";
+
+    else {
+        echo "Tu dois continuer à taper un nombre \n";
+    }
+   
     $i++;
+}
+
+
+
+$i = 1;
+echo "Tape un nombre :\n";
+$number = trim(fgets(STDIN));
+
+while ($i <= 3) {
+    switch ($commande) {
+        case "create":
+            echo "Creation du fichier\n";
+            $fichier = fopen(date("h:m:s"),"w+");
+            break;
+        case "aide":
+            echo "Commandesshdcudhucfhd disponibles : create, aide, quitter\n";
+            break;
+        case "quitter":
+            echo "Au revoir !\n";
+            exit; // arrête l'execution du programme
+        default:
+            echo "Commande inconnue.\n";
+    }
 }
 
 
 
 
 
-// Somme des nombres
-// Demandez à l'utilisateur de saisir des nombres jusqu'à ce qu'il saisisse 0. Affichez la somme de tous les nombres saisis.
 
 
 
-// Somme des nombres et string
+
+
+
+// <?php  
+// $i = 1;
+
+// while ($i < 6) {
+//   if ($i == 3) break;  
+//   echo $i;
+//   $i++;
+// } 
+// 
 
 
 // Demandez à l'utilisateur de saisir des nombres jusqu'à ce qu'il saisisse "exit". Affichez la somme de tous les nombres saisis.
