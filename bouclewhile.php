@@ -376,13 +376,29 @@
 
 
 // Compteur de voyelles
-
-
 // Demandez à l'utilisateur de saisir une phrase. Comptez et affichez le nombre de voyelles dans la phrase.
-
-
-
 // Utilisez strtolower() pour convertir la phrase en minuscules.
+
+
+$i = 0;
+$vowels = array("a","e","i","o","u");
+
+while($i<3) {
+     echo "écris une phrase et je te dirai le nombre de voyelles : \n";
+     $commande = trim(fgets(STDIN));
+     $str = strtolower($commande);
+     $count = 0;
+     $count = 0;
+
+
+  for ($i = 0; $i < strlen($str); $i++) {
+  if (in_array(strtolower($str[$i]), $vowels)) {
+    $count++;
+  }
+}
+echo "Nombre de voyelles dans cette phrase  $str  est de : $count";
+
+}
 
 
 

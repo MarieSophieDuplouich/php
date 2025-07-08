@@ -68,3 +68,6 @@
 
 
 // Créez une fonction fusionnerTableaux qui prend deux tableaux en paramètre et retourne un tableau contenant les éléments des deux tableaux.
+
+
+
