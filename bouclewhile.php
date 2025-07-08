@@ -361,17 +361,29 @@
 
 // Jeu de devinette
 // Créez un jeu où l'utilisateur doit deviner un nombre entre 1 et 100. Le programme lui indique si le nombre est plus grand ou plus petit que le nombre à deviner. Continuez jusqu'à ce qu'il trouve le bon nombre.
-
 // Devine un nombre entre 1 et 100
-
 // Nombre deviné
-
 // exit 
-
 // Nombre non deviné continue à chercher il est plus petit ou plus grand !
-
-
 // Utilisez la fonction rand pour générer un nombre aléatoire entre 1 et 100.
+
+
+$nombre = rand(1,100);
+
+do{
+    echo "Devine un nombre ?\n";
+    $utilisateur = (int) trim(fgets(STDIN));
+if ($nombre>=$utilisateur){
+    echo "nombre plus grand\n";
+}
+else
+{
+ echo "plus petit\n";
+
+}
+
+} while($utilisateur != $nombre);
+echo "Bien joué!\n";
 
 
 

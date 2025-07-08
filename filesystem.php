@@ -35,6 +35,23 @@
 // Demandez à l'utilisateur son nom et enregistrez-le dans un fichier utilisateur.txt.
 // Astuce : faite attention au droit d'accès du fichier, si vous n'avez pas les bons droits, le fichier ne sera pas créé.
 
+
+
+$fichier = fopen("utilisateur.txt", "w+");
+
+
+$score = trim(fgets(STDIN));
+
+
+while (true){
+
+   $score = trim(fgets(STDIN));
+   fwrite($fichier,$score);
+}
+
+
+
+
 // Lire et afficher le contenu d’un fichier
 
 // Lisez le fichier utilisateur.txt et affichez son contenu à l'écran au démarrage du programme.
