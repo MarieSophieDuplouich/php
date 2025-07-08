@@ -404,36 +404,37 @@
 
 // Mot de passe
 // Demandez à l'utilisateur de saisir un mot de passe. 
-// Tant que le mot de passe n'est pas "password123", continuez à demander une saisie. Affichez un message de bienvenue quand le mot de passe est correct.
+// Tant que le mot de passe n'est pas "password123", 
+// continuez à demander une saisie. Affichez un message de bienvenue quand le mot de passe est correct.
 
 
-$i = 0;
-$mauvaismdp = "password123";
-$bonmdp="oiseaulyre12345";
+// $i = 0;
+// $mauvaismdp = "password123";
+// $bonmdp="oiseaulyre12345";
 
-while ($i <= 20) {
-    echo "le mot de passe :\n";
-    $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
-    switch ($commande) {
+// while ($i <= 20) {
+//     echo "le mot de passe :\n";
+//     $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
+//     switch ($commande) {
 
-            case $bonmdp:
-            echo "Tu as deviné! Bravo !\n";
-            exit; // arrête l'execution du programme  
+//             case $bonmdp:
+//             echo "Tu as deviné! Bravo !\n";
+//             exit; // arrête l'execution du programme  
 
-            case $mauvaismdp:
-            echo "Ne pas taper ce genre de mot de passe ! Perdu, continue !\n";
-            break;
+//             case $mauvaismdp:
+//             echo "Ne pas taper ce genre de mot de passe ! Perdu, continue !\n";
+//             break;
             
-            default:
-            echo "Mauvais mot de passe";
-            break;
-    }
+//             default:
+//             echo "Mauvais mot de passe";
+//             break;
+//     }
 
     
-    $i++;
-}
+//     $i++;
+// }
 
-echo "trop de tentatives fin du jeu !";
+// echo "trop de tentatives fin du jeu !";
 
 
 
@@ -442,8 +443,28 @@ echo "trop de tentatives fin du jeu !";
 
 // Mot de passe avec limite
 
+// while ($i<= 10){
+//      if ($password === "oiseaulyre12345"; ) {
+
+//         echo "tu as trouvé bienvenue\n";
+
+//      } else {
+
+//         echo "tu as perdu continue à chercher\n";
+
+//     }
+
+//     $i++;
+// }
 
 
+// $t = date("H");
+
+// if ($t < "20") {
+//   echo "Have a good day!";
+// } else {
+//   echo "Have a good night!";
+// }
 
 // Demandez à l'utilisateur de saisir un mot de passe. Limitez le nombre de tentatives à 3. Si le mot de passe est incorrect après 3 tentatives, affichez un message d'erreur et terminez le programme.
 
