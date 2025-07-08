@@ -380,32 +380,62 @@
 // Utilisez strtolower() pour convertir la phrase en minuscules.
 
 
-$i = 0;
-$vowels = array("a","e","i","o","u");
+// $i = 0;
+// $vowels = array("a","e","i","o","u");
 
-while($i<3) {
-     echo "écris une phrase et je te dirai le nombre de voyelles : \n";
-     $commande = trim(fgets(STDIN));
-     $str = strtolower($commande);
-     $count = 0;
-     $count = 0;
+// while($i<3) {
+//      echo "écris une phrase et je te dirai le nombre de voyelles : \n";
+//      $commande = trim(fgets(STDIN));
+//      $str = strtolower($commande);
+//      $count = 0;
+//      $count = 0;
 
 
-  for ($i = 0; $i < strlen($str); $i++) {
-  if (in_array(strtolower($str[$i]), $vowels)) {
-    $count++;
-  }
-}
-echo "Nombre de voyelles dans cette phrase  $str  est de : $count";
+//   for ($i = 0; $i < strlen($str); $i++) {
+//   if (in_array(strtolower($str[$i]), $vowels)) {
+//     $count++;
+//   }
+// }
+// echo "Nombre de voyelles dans cette phrase  $str  est de : $count";
 
-}
+// }
 
 
 
 // Mot de passe
+// Demandez à l'utilisateur de saisir un mot de passe. 
+// Tant que le mot de passe n'est pas "password123", continuez à demander une saisie. Affichez un message de bienvenue quand le mot de passe est correct.
 
 
-// Demandez à l'utilisateur de saisir un mot de passe. Tant que le mot de passe n'est pas "password123", continuez à demander une saisie. Affichez un message de bienvenue quand le mot de passe est correct.
+$i = 0;
+$mauvaismdp = "password123";
+$bonmdp="oiseaulyre12345";
+
+while ($i <= 20) {
+    echo "le mot de passe :\n";
+    $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
+    switch ($commande) {
+
+            case $bonmdp:
+            echo "Tu as deviné! Bravo !\n";
+            exit; // arrête l'execution du programme  
+
+            case $mauvaismdp:
+            echo "Ne pas taper ce genre de mot de passe ! Perdu, continue !\n";
+            break;
+            
+            default:
+            echo "Mauvais mot de passe";
+            break;
+    }
+
+    
+    $i++;
+}
+
+echo "trop de tentatives fin du jeu !";
+
+
 
 
 
