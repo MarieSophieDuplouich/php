@@ -368,22 +368,22 @@
 // Utilisez la fonction rand pour générer un nombre aléatoire entre 1 et 100.
 
 
-$nombre = rand(1,100);
+// $nombre = rand(1,100);
 
-do{
-    echo "Devine un nombre ?\n";
-    $utilisateur = (int) trim(fgets(STDIN));
-if ($nombre>=$utilisateur){
-    echo "nombre plus grand\n";
-}
-else
-{
- echo "plus petit\n";
+// do{
+//     echo "Devine un nombre ?\n";
+//     $utilisateur = (int) trim(fgets(STDIN));
+// if ($nombre>=$utilisateur){
+//     echo "nombre plus grand\n";
+// }
+// else
+// {
+//  echo "plus petit\n";
 
-}
+// }
 
-} while($utilisateur != $nombre);
-echo "Bien joué!\n";
+// } while($utilisateur != $nombre);
+// echo "Bien joué!\n";
 
 
 
@@ -420,33 +420,33 @@ echo "Bien joué!\n";
 // continuez à demander une saisie. Affichez un message de bienvenue quand le mot de passe est correct.
 
 
-// $i = 0;
-// $mauvaismdp = "password123";
-// $bonmdp="oiseaulyre12345";
+$i = 0;
+$mauvaismdp = "password123";
+$bonmdp="oiseaulyre12345";
 
-// while ($i <= 20) {
-//     echo "le mot de passe :\n";
-//     $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
-//     switch ($commande) {
+while ($i <= 20) {
+    echo "le mot de passe :\n";
+    $commande = trim(fgets(STDIN)); // trim enlève le retour à la ligne
+    switch ($commande) {
 
-//             case $bonmdp:
-//             echo "Tu as deviné! Bravo !\n";
-//             exit; // arrête l'execution du programme  
+            case $bonmdp:
+            echo "Tu as deviné! Bravo !\n";
+            exit; // arrête l'execution du programme  
 
-//             case $mauvaismdp:
-//             echo "Ne pas taper ce genre de mot de passe ! Perdu, continue !\n";
-//             break;
+            case $mauvaismdp:
+            echo "Ne pas taper ce genre de mot de passe ! Perdu, continue !\n";
+            break;
             
-//             default:
-//             echo "Mauvais mot de passe";
-//             break;
-//     }
+            default:
+            echo "Mauvais mot de passe";
+            break;
+    }
 
     
-//     $i++;
-// }
+    $i++;
+}
 
-// echo "trop de tentatives fin du jeu !";
+echo "trop de tentatives fin du jeu !";
 
 
 
@@ -456,7 +456,7 @@ echo "Bien joué!\n";
 // Mot de passe avec limite
 
 // while ($i<= 10){
-//      if ($password === "oiseaulyre12345"; ) {
+//      if ($password === "oiseaulyre12345") {
 
 //         echo "tu as trouvé bienvenue\n";
 
