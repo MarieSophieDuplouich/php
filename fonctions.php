@@ -48,7 +48,40 @@
 
 // Créez une fonction compterVoyelles qui prend une chaîne de caractères et retourne le nombre de voyelles qu'elle contient.
 // Astuce : Utilisez la fonction strtolower() pour convertir la chaîne en minuscules avant de compter les voyelles.
+ 
 
+
+function compterVoyelles($str)
+{
+    $str = strtolower($str);
+    $vowelCount = 0;
+
+    for ($i = 0; $i < strlen($str); $i++) {
+        if (in_array($str[$i], ["a", "e", "i", "o", "u"])) {
+            $vowelCount++;
+        }
+    }
+
+    return $vowelCount;
+}
+
+// Driver code
+$str = "Mary Had A Little Lamb and She LOVED It So";
+$vowelsCount =  compterVoyelles($str);
+
+echo "Number of vowels: " . $vowelsCount;
+
+
+
+
+
+
+
+$byte_length = strlen('Je suis un hibou'); // => 4
+$string_length = mb_strlen('Je suis un hibou'); // => 1
+
+var_dump($byte_length);
+var_dump($string_length);
 
 
 // Créez une fonction inverserTableau qui prend un tableau en paramètre et retourne un nouveau tableau avec les éléments dans l'ordre inverse.
